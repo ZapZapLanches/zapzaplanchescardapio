@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #e9fbe5; /* tom verde claro */
+  color: #2e4d2c; /* verde escuro para contraste */
+}
+
+header {
+  background-color: #c9efbb;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 5px rgba(16, 133, 16, 0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #2f612e;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.item {
+  background-color: #f2fdf0;
+  border: 5px solid #a5cba1;
+  border-radius: 30px;
+  overflow:hidden;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 50, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.item:hover {
+  transform: scale(1.03);
+}
+
+.item img {
+  width: 100%;
+  height: 400px;
+  object-fit:scale-down;
+}
+
+.item p {
+  padding: 0.8rem;
+  font-weight: bold;
+  color: #2e4d2c;
+}
+
+.contact {
+  text-align: center;
+  padding: 2rem;
+  background-color: #d8f5cd;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #25d366; /* verde WhatsApp */
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe5d;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #c2e6ba;
+  font-size: 0.9rem;
+}
